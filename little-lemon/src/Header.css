@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding:28px 0px;
+}
+.nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 18px;
+    list-style: none;
+}
