@@ -1,8 +1,8 @@
 import React from 'react';
 function Main() {
     return (
-        <main>
-            <section>
+        <main className="main">
+            <section className="spotlight">
                 <article id="spotlight">
                     <h1>Spotlight</h1>
                     <p>
@@ -17,10 +17,10 @@ function Main() {
                     </p>
                 </article>
             </section>
-            <section>
-                <article>
+            <section className="information">
+                <article id="menu">
                     <h2>Our New Menu</h2>
-                    <img src="Images\New Menu.png" alt="Little Lemon Logo" id="article_images" />
+                    <img src="src\images\circle_bread.jpg" alt="Bruschetta" id="article_images" />
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque, 
                         provident deserunt id, quae vero explicabo quisquam libero itaque voluptatem 
@@ -28,7 +28,7 @@ function Main() {
                     </p>
                     <p><a href="menu.html">Check out our menu!</a></p>
                 </article>
-                <article>
+                <article id="book">
                     <h2>Book A Table</h2>
                     <img src="Images\Book a Table.jpg" alt="Little Lemon Logo" id="article_images" />
                     <p>
@@ -38,7 +38,7 @@ function Main() {
                     </p>
                     <p><a href="book.html">Book a table now!</a></p>
                 </article>
-                <article>
+                <article id="hours">
                     <h2>Open Hours</h2>
                     <img src="Images\Open Hours.jpg" alt="Little Lemon Logo" id="article_images" />
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
