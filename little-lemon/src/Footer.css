@@ -1,12 +1,16 @@
 .footer .footer-component {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
-    padding:28px 0px;
+    margin: 0vh 2vw;
+    padding:3vh 2vw;
 }
 .contact {
-    display: 
+    padding-left: 2vw;
 }
-.socials {
-
+.socials ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    list-style-type: none;
+    padding: 0;
 }
