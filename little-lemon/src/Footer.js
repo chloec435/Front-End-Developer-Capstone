@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../src/images/Asset 20@4x.png';
-import './Footer.css';
+import './Footer.css'
 function Footer() {
     return (
         <footer className="footer">
@@ -17,11 +17,11 @@ function Footer() {
                 <div className="socials">
                     <h4>Social Media</h4>
                     <ul>
-                        <li><a href="#">Website</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">X</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="https://littlelemon.com">Website</a></li>
+                        <li><a href="https://facebook.com">Facebook</a></li>
+                        <li><a href="https://instagram.com">Instagram</a></li>
+                        <li><a href="https://x.com">X</a></li>
+                        <li><a href="https://linkedin.com">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
