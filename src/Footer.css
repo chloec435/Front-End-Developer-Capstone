@@ -1,0 +1,16 @@
+.footer .footer-component {
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 2vw;
+    padding:3vh 2vw;
+}
+.contact {
+    padding-left: 2vw;
+}
+.socials ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    list-style-type: none;
+    padding: 0;
+}

@@ -1,0 +1,23 @@
+/* .main {
+    display: flex;
+    margin-left: 20vw;
+    padding: 30px 10px;
+} */
+/* .spotlight .menu .book .hours {
+    display: flex;
+    margin-left: 20px;
+    padding: 30px 10px;
+} */
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+    background-color: rgba(255, 235, 133, 0.393);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1rem;
+    border: rgb(73, 94, 87) solid 4px;
+    justify-content: center;
+}

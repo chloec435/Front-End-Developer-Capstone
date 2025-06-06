@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 2vw;
+    padding:3vh 2vw;
+}
+.nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5vw;
+    font-size: 18px;
+    list-style: none; 
+}
