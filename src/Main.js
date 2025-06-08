@@ -1,4 +1,8 @@
 import React from 'react';
+import './Main.css';
+import menu from './images/New Menu.png';
+import reserve from './images/Book a Table.jpg';
+import hours from './images/Open Hours.jpg';
 function Main() {
     return (
         <main className="main">
@@ -20,7 +24,7 @@ function Main() {
             <section className="information">
                 <article id="menu">
                     <h2>Our New Menu</h2>
-                    <img src="src\images\circle_bread.jpg" alt="Bruschetta" id="article_images" />
+                    <img src={menu} alt="Bruschetta" id="article_images" />
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque, 
                         provident deserunt id, quae vero explicabo quisquam libero itaque voluptatem 
@@ -30,7 +34,7 @@ function Main() {
                 </article>
                 <article id="book">
                     <h2>Book A Table</h2>
-                    <img src="Images\Book a Table.jpg" alt="Little Lemon Logo" id="article_images" />
+                    <img src={reserve} alt="Reserve Table" id="article_images" />
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem aspernatur 
                         veritatis quam qui sequi suscipit, culpa illo similique numquam exercitationem 
@@ -40,7 +44,7 @@ function Main() {
                 </article>
                 <article id="hours">
                     <h2>Open Hours</h2>
-                    <img src="Images\Open Hours.jpg" alt="Little Lemon Logo" id="article_images" />
+                    <img src={hours} alt="Open Sign" id="article_images" />
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <p>Mon to Thurs: 11 AM—11 PM</p>
                     <p>Fri to Sat: 11 AM—12 AM</p>
