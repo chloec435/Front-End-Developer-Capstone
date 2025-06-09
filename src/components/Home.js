@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.css';
-import menu from './images/New Menu.png';
-import reserve from './images/Book a Table.jpg';
-import hours from './images/Open Hours.jpg';
+import menu from '../images/New Menu.png';
+import reserve from '../images/Book a Table.jpg';
+import hours from '../images/Open Hours.jpg';
 import Header from './Header.js';
 import Footer from './Footer.js';
 function Home() {

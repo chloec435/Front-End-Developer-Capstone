@@ -20,7 +20,7 @@ article {
     background-color: #495e57;
 }
 #spotlight {
-    background-image: url("images/Spotlight.jpeg");
+    background-image: url("../images/Spotlight.jpeg");
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.309);
