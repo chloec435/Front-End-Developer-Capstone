@@ -12,7 +12,6 @@ function Header() {
                 <ul className="nav-list">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/booking">Reserve A Table</Link></li>
-                    <li><Link to="/about">About</Link></li>
                 </ul>
             </nav>
         </header>
