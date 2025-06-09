@@ -1,15 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function BookingForm() {
+export default function BookingForm({ availableTimes, dispatch }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("None");
-
-  const [availableTimes, setAvailableTimes] = useState([
-    "17:00", "18:00", "19:00", "20:00", "21:00", "22:00",
-  ]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -22,6 +18,12 @@ export default function BookingForm() {
     );
   }
 
+  function handleDateChange(e) {
+    const newDate = e.target.value;
+    setDate(newDate);
+    dispatch({ type: "UPDATE_TIMES", date: newDate });
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="res-date">Choose Date</label>
@@ -29,7 +31,7 @@ export default function BookingForm() {
         type="date"
         id="res-date"
         value={date}
-        onChange={(e) => setDate(e.target.value)}
+        onChange={handleDateChange}
       />
 
       <label htmlFor="res-time">Choose Time</label>

@@ -1,25 +1,26 @@
 import React from 'react';
-import './Main.css';
+import './Home.css';
 import menu from './images/New Menu.png';
 import reserve from './images/Book a Table.jpg';
 import hours from './images/Open Hours.jpg';
 import Header from './Header.js';
 import Footer from './Footer.js';
-function Main() {
+function Home() {
     return (
     <>
         <Header />
-        <Home />
+        <HomePage />
         <Footer />
     </>
     );
 }
 
-export default Main;
+export default Home;
 
-function Home() {
+function HomePage() {
     return (
         <main className="main">
+
             <section className="spotlight">
                 <article id="spotlight">
                     <h1>Spotlight</h1>
@@ -35,7 +36,9 @@ function Home() {
                     </p>
                 </article>
             </section>
+
             <section className="information">
+
                 <article id="menu">
                     <h2>Our New Menu</h2>
                     <img src={menu} alt="Bruschetta" id="article_images"/>
@@ -46,6 +49,7 @@ function Home() {
                     </p>
                     <p><a href="menu.html">Check out our menu!</a></p>
                 </article>
+
                 <article id="book">
                     <h2>Book A Table</h2>
                     <img src={reserve} alt="Reserve Table" id="article_images" />
@@ -56,6 +60,7 @@ function Home() {
                     </p>
                     <p><a href="book.html">Book a table now!</a></p>
                 </article>
+
                 <article id="hours">
                     <h2>Open Hours</h2>
                     <img src={hours} alt="Open Sign" id="article_images" />
@@ -64,6 +69,7 @@ function Home() {
                     <p>Fri to Sat: 11 AM—12 AM</p>
                     <p>Sunday: Closed</p>
                 </article>
+
             </section>
         </main>
     );
