@@ -90,7 +90,7 @@ export default function BookingForm({ availableTimes, dispatch }) {
         </select>
       </div>
 
-      <div><input type="submit" value="Make Your reservation" /></div>
+      <div id="reservation"><input type="submit" value="Make Your Reservation" /></div>
     </form>
   );
 }
