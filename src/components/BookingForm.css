@@ -1,15 +1,26 @@
 .form {
     display: grid;
-    background-color: #475e57;
     justify-content: center;
     text-align: center;
+    background-color:  #475e57;
 }
 h2 {
-    text-align: center;
     padding-bottom: 0;
     border: none;
+    color: #f4ce14;
 }
 input, select {
     width: 90vw;
     font-size: xx-large;
+    background-color: #fff5c0;
+    border-radius: 10px;
+    text-align: center;
+}
+#heading, h1 {
+    text-align: center;
+    background-color: #f4ce14;
+    color: #475e57;
+}
+#reservation {
+    padding: 10vw;
 }
