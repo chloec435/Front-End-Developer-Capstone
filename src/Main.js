@@ -3,7 +3,21 @@ import './Main.css';
 import menu from './images/New Menu.png';
 import reserve from './images/Book a Table.jpg';
 import hours from './images/Open Hours.jpg';
+import Header from './Header.js';
+import Footer from './Footer.js';
 function Main() {
+    return (
+    <>
+        <Header />
+        <Home />
+        <Footer />
+    </>
+    );
+}
+
+export default Main;
+
+function Home() {
     return (
         <main className="main">
             <section className="spotlight">
@@ -24,7 +38,7 @@ function Main() {
             <section className="information">
                 <article id="menu">
                     <h2>Our New Menu</h2>
-                    <img src={menu} alt="Bruschetta" id="article_images" />
+                    <img src={menu} alt="Bruschetta" id="article_images"/>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque, 
                         provident deserunt id, quae vero explicabo quisquam libero itaque voluptatem 
@@ -54,5 +68,3 @@ function Main() {
         </main>
     );
 }
-
-export default Main;
