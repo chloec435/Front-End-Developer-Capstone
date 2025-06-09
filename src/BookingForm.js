@@ -23,12 +23,12 @@ export default function BookingForm({ availableTimes, dispatch }) {
   function handleDateChange(e) {
     const newDate = e.target.value;
     setDate(newDate);
-    dispatch({ type: "UPDATE_TIMES", date: newDate });
+    dispatch({ type: "updateTime", date: newDate });
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="res-date">Choose Date</label>
+      <label htmlFor="res-date">Select a Date</label>
       <input
         type="date"
         id="res-date"
@@ -36,7 +36,7 @@ export default function BookingForm({ availableTimes, dispatch }) {
         onChange={handleDateChange}
       />
 
-      <label htmlFor="res-time">Choose Time</label>
+      <label htmlFor="res-time">Select a Time</label>
       <select
         id="res-time"
         value={time}
