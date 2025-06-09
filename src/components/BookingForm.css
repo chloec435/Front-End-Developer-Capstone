@@ -1,0 +1,15 @@
+.form {
+    display: grid;
+    background-color: #475e57;
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    padding-bottom: 0;
+    border: none;
+}
+input, select {
+    width: 90vw;
+    font-size: xx-large;
+}
