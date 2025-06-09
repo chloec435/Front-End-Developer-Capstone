@@ -5,6 +5,7 @@ import reserve from '../images/Book a Table.jpg';
 import hours from '../images/Open Hours.jpg';
 import Header from './Header.js';
 import Footer from './Footer.js';
+import { Link } from 'react-router-dom';
 function Home() {
     return (
     <>
@@ -47,7 +48,6 @@ function HomePage() {
                         provident deserunt id, quae vero explicabo quisquam libero itaque voluptatem 
                         unde odio, officiis magni odit fuga molestiae velit possimus. Rerum!
                     </p>
-                    <p><a href="menu.html">Check out our menu!</a></p>
                 </article>
 
                 <article id="book">
@@ -58,7 +58,7 @@ function HomePage() {
                         veritatis quam qui sequi suscipit, culpa illo similique numquam exercitationem 
                         ducimus beatae, soluta dolore id alias. Asperiores rem totam excepturi!
                     </p>
-                    <p><a href="book.html">Book a table now!</a></p>
+                    <p><Link to="/booking">Book a table now!</Link></p>
                 </article>
 
                 <article id="hours">
