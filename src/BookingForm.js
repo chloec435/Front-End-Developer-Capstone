@@ -7,6 +7,8 @@ export default function BookingForm({ availableTimes, dispatch }) {
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("None");
 
+  console.log("availableTimes", availableTimes);
+
   function handleSubmit(e) {
     e.preventDefault();
     alert(
@@ -40,9 +42,13 @@ export default function BookingForm({ availableTimes, dispatch }) {
         value={time}
         onChange={(e) => setTime(e.target.value)}
       >
-        {availableTimes.map((t) => (
-          <option key={t} value={t}>{t}</option>
-        ))}
+        {Array.isArray(availableTimes) && availableTimes.length > 0 ? (
+          availableTimes.map((t) => (
+            <option key={t} value={t}>{t}</option>
+          ))
+        ) : (
+          <option disabled>No times available</option>
+        )}
       </select>
 
       <label htmlFor="guests">Number of Guests</label>
