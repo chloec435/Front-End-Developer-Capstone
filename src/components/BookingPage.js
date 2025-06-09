@@ -1,8 +1,9 @@
 import React from 'react';
 import { useReducer } from 'react';
-import BookingForm from './BookingForm';
+import BookingForm from './BookingForm.js';
 import Header from './Header.js';
 import Footer from './Footer.js';
+import './BookingForm.css';
 
 const initializeTimes = () => ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 
@@ -20,7 +21,7 @@ export default function BookingPage() {
       <>
        <Header />
       </>
-      <h1>Book a Table</h1>
+      <div id="heading"><h1>Book a Table</h1></div>
       <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
       <>
         <Footer />
