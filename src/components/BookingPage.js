@@ -1,6 +1,8 @@
 import React from 'react';
 import { useReducer } from 'react';
 import BookingForm from './BookingForm';
+import Header from './Header.js';
+import Footer from './Footer.js';
 
 const initializeTimes = () => ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 
@@ -15,8 +17,14 @@ export default function BookingPage() {
   const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
   return (
     <main>
+      <>
+       <Header />
+      </>
       <h1>Book a Table</h1>
       <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+      <>
+        <Footer />
+      </>
     </main>
   );
 }
